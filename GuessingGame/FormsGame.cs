@@ -37,7 +37,7 @@ namespace GuessingGame
 
         override protected void showWinMessage()
         {
-            DialogResult dialogResult = MessageBox.Show(I_WIN_MESSAGE, GAME_NAME, MessageBoxButtons.OK);
+            MessageBox.Show(I_WIN_MESSAGE, GAME_NAME, MessageBoxButtons.OK);
         }
 
         override protected Boolean guessedItRight(string animal)
