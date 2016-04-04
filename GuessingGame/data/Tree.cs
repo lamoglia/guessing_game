@@ -1,6 +1,6 @@
 ﻿namespace GuessingGame.data
 {
-    class Tree
+   public class Tree
     {
         private TreeNode root;
 
