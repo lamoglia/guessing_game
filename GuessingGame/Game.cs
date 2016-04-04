@@ -1,7 +1,5 @@
 ﻿
 using System;
-
-using TreeNode = GuessingGame.data.TreeNode;
 using GuessingGame.data;
 
 namespace GuessingGame
