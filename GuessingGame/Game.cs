@@ -16,14 +16,12 @@ namespace GuessingGame
 
         private Tree knowledgeTree;
         private TreeNode currentGuessingNode;
-
-        public Game()
+        
+        public void startGame(string animalTrait, string animalWithTrait, string animalWithoutTrait)
         {
-            knowledgeTree = new Tree();
-        }
+            //start the game with the initial guessings
+            knowledgeTree = new Tree(animalTrait, animalWithTrait, animalWithoutTrait);
 
-        public void startGame()
-        {
             while (askToThinkAboutAnAnimal())
             {
                 askPlayerAboutTraits();

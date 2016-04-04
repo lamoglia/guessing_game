@@ -10,8 +10,9 @@ namespace GuessingGame
         [STAThread]
         static void Main()
         {
-            Game game = new FormsGame();
-            game.startGame();
+            Game game = new FormsGame();    
+            //start the game with its initial guessings
+            game.startGame("it lives in water", "Shark", "Monkey");
         }
     }
 }
