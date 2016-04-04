@@ -46,13 +46,13 @@
             // 
             this.animalNameTextBox.Location = new System.Drawing.Point(12, 48);
             this.animalNameTextBox.Name = "animalNameTextBox";
-            this.animalNameTextBox.Size = new System.Drawing.Size(540, 22);
+            this.animalNameTextBox.Size = new System.Drawing.Size(578, 22);
             this.animalNameTextBox.TabIndex = 1;
             this.animalNameTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.animalNameTextBox_KeyUp);
             // 
             // okButton
             // 
-            this.okButton.Location = new System.Drawing.Point(434, 88);
+            this.okButton.Location = new System.Drawing.Point(470, 85);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(120, 30);
             this.okButton.TabIndex = 2;
@@ -64,7 +64,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 127);
+            this.ClientSize = new System.Drawing.Size(602, 127);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.animalNameTextBox);
             this.Controls.Add(this.label1);
