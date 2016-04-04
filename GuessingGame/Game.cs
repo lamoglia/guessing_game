@@ -8,7 +8,7 @@ namespace GuessingGame
     /// Main game logic.     
     /// Needs a concrete implementation with concrete presentation methods.
     /// </summary>
-    abstract class Game
+    public abstract class Game
     {
         public const string GAME_NAME = "Guessing Game";
 

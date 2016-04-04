@@ -7,7 +7,7 @@ namespace GuessingGame
     /// <summary>
     /// Game presentation logic (Windows forms)
     /// </summary>
-    class FormsGame: Game
+    public class FormsGame: Game
     {
         private const string THINK_ABOUT_AN_ANIMAL_MESSAGE = "Think about an animal...";
         private const string ASK_ABOUT_TRAIT_MESSAGE = "Does the animal that you thougth about {0}?";
