@@ -2,7 +2,7 @@
 
 namespace GuessingGame.data
 {
-    class TreeNode
+    public class TreeNode
     {
         private String data;
         private TreeNode yesNode;
@@ -35,9 +35,9 @@ namespace GuessingGame.data
         /// Its previous content are stored in the created "no" child node, 
         /// its content get changed to the trait of the animal stored in the created "yes" child node.
         /// </summary>
-        /// <param name="animalTrait">An animal trait</param>
-        /// <param name="animalName">An animal name</param>
-        public void updateLeafNode(string animalTrait, string animalName)
+        /// <param name="newAnimalTrait">An animal trait</param>
+        /// <param name="newAnimalName">An animal name</param>
+        public void updateLeafNode(string newAnimalTrait, string newAnimalName)
         {
             if (!isLeafNode())
             {   
@@ -46,8 +46,8 @@ namespace GuessingGame.data
             }
 
             noNode = new TreeNode(data);
-            yesNode = new TreeNode(animalName);
-            data = animalTrait;
+            yesNode = new TreeNode(newAnimalName);
+            data = newAnimalTrait;
         }
 
         public TreeNode getNoNode()
