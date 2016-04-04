@@ -15,11 +15,17 @@ namespace GuessingGameTests
         private const string TRAIT_PLATYPUS = "lays eggs";
         private const string TRAIT_EAGLE = "flies";
 
+        private TreeNode node;
+
+        [TestInitialize()]
+        public void init()
+        {
+            node = new TreeNode(TRAIT_DOG, ANIMAL_DOG, ANIMAL_PLATYPUS);
+        }
+
         [TestMethod]
         public void NonLeafNode_ShouldHaveTwoLeafNodes()
         {
-            TreeNode node = new TreeNode(TRAIT_DOG, ANIMAL_DOG, ANIMAL_PLATYPUS);
-
             //node is a non leaf node
             Assert.IsFalse(node.isLeafNode());
 
@@ -29,9 +35,8 @@ namespace GuessingGameTests
         }
 
         [TestMethod]
-        public void UpdateLeafNode_ShoulCreateTwoLeafNodes_WithCorrectContents()
+        public void UpdatingALeafNode_ShoulCreateTwoLeafNodes_WithCorrectContents()
         {
-            TreeNode node = new TreeNode(TRAIT_DOG, ANIMAL_DOG, ANIMAL_PLATYPUS);
             TreeNode leafNode = node.getYesNode();
 
             //leafNode is a leaf node
@@ -59,8 +64,6 @@ namespace GuessingGameTests
         [ExpectedException(typeof(Exception))]
         public void UpdateNonLeafNode_ShouldThrowException()
         {
-            TreeNode node = new TreeNode(TRAIT_DOG, ANIMAL_DOG, ANIMAL_PLATYPUS);
-
             //node is a non leaf node
             Assert.IsFalse(node.isLeafNode());
             node.updateLeafNode(TRAIT_PLATYPUS, ANIMAL_PLATYPUS);
